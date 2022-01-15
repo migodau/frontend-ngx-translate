@@ -8,7 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class AppComponent {
   title = 'frontend-ngx-translate';
-
+  enjoy = 'enjoy_your_day';
+  
   constructor(private translateService: TranslateService) {
     this.translateService.setDefaultLang('pt');
     this.translateService.use(localStorage.getItem('lang') || 'pt');
